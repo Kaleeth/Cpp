@@ -69,7 +69,7 @@ int main(int argc, char const *argv[]) {
 class Actor { 
 public:
     static void init() { current_ = 0; }
-    static void swap() { current_ = next(); }
+    static void swap() { current_ = next(); } // ? + slapped_[current] = false;
     
     void slap() { slapped_[next()] = true; }
     bool wasSlapped() { return slapped_[current_]; }
