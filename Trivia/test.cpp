@@ -1,9 +1,9 @@
-#include <vector>
 #include <algorithm>
 #include <iostream>
 #include <list>
-#include <stdexcept>
 #include <memory>
+#include <stdexcept>
+#include <vector>
 
 auto lessThenFive(std::vector<int>& v) {
     return std::none_of(v.begin(), v.end(), [](const int e){ return e<5; });
