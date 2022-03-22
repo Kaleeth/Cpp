@@ -17,5 +17,5 @@ int main() {
     const auto start{now()};
     std::this_thread::sleep_until(wait_time());
     std::chrono::duration<double, std::milli> elapsed {now() - start};
-    std::cout << std::format("Waited {} ms.", elapsed);
+    std::cout << std::format("Waited {} ms.", elapsed); // use cl /std:latest from msvc for formatting or change
 }
