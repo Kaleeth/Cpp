@@ -12,3 +12,4 @@
 **/.history
 # Ignore executables
 **/*.exe
+**/*.out
