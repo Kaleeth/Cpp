@@ -1,6 +1,6 @@
 #include <cassert>
 
-#include "header_file.h"
+#include "header_file.hpp"
 
 int main() {
     assert(&Pi == get_pi());

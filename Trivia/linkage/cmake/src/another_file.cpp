@@ -1,4 +1,4 @@
-#include "header_file.h"
+#include "header_file.hpp"
 
 const int* get_pi() {
     return &Pi;
