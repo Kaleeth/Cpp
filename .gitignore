@@ -1,6 +1,6 @@
 ### VisualStudioCode ###
-.vscode/*      
-.vs/*
+.vscode  
+.vs
 # Maybe .vscode/**/* instead - see comments
 # !.vscode/settings.json
 # !.vscode/tasks.json
@@ -9,7 +9,7 @@
 
 ### VisualStudioCode Patch ###
 # Ignore all local history of files
-**/.history
+.history
 
 # Ignore executables
 *.exe
