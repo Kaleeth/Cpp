@@ -1,5 +1,5 @@
 #include <chrono>
-#include <format> // c++20
+#include <format> // c++20 + MSVC
 #include <iostream>
 #include <thread>
 
