@@ -9,8 +9,9 @@ int main() {
     std::srand(std::time(nullptr));
     // auto start = std::chrono::high_resolution_clock::now();
 
-    while(true) {
+    // while (true) {
+    while(getchar() != 27) { // 27 == 'ESC' (== '\e' in GCC)
         std:: cout << (int) (70 + std::rand() % 36) << std::endl;
-        std::this_thread::sleep_for(2000ms);
+        std::this_thread::sleep_for(100ms);
     }
 }
