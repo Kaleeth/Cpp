@@ -90,11 +90,11 @@ struct integral_constant {
 }; // overloading T and () operators
 // E.g.
 template<class T>
-struct rank_new : integral_constant<size_t, 0u> {};
+struct rank2 : integral_constant<size_t, 0u> {};
 template<class U, size_t N>
-struct rank_new<U[N]> : integral_constant<size_t, 1u + rank<U>::value> {};
+struct rank2<U[N]> : integral_constant<size_t, 1u + rank2<U>::value> {};
 template<class U>
-struct rank_new<U[]> : integral_constant<size_t, 1u + rank<U>::value> {};
+struct rank2<U[]> : integral_constant<size_t, 1u + rank2<U>::value> {};
 // conveniences
 template<bool b>
 using bool_constant = integral_constant<bool, b>; 
