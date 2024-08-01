@@ -16,6 +16,10 @@
 *.out
 *.gch
 
+*.o
+*.gcm
+*.pcm
+
 # CMake
 CMakeFiles
 CMakeCache.txt
